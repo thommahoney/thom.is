@@ -1,0 +1,26 @@
+<%= form_for(@link) do |f| %>
+  <% if @link.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@link.errors.count, "error") %> prohibited this link from being saved:</h2>
+
+      <ul>
+      <% @link.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field" id="long">
+    <%= f.label 'Full URL' %><br />
+    <%= f.text_field :long %>
+  </div>
+  <a href="javascript://" id="show_short_anchor">Show Short Link</a>
+  <div class="field" id="short">
+    <%= f.label 'http://thom.is/' %>
+    <%= f.text_field :short, :value => Link.random_string(3) %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Shorten", :onclick => '' %>
+  </div>
+<% end %>

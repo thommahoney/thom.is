@@ -1,0 +1,33 @@
+<div class="header">All Links</div>
+
+<table border="1">
+  <tr>
+    <th>Short Path</th>
+    <th>Full URL</th>
+    <th>Requests</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @links.each do |link| %>
+  <tr>
+    <td><%= link_to link.short, "http://thom.is/#{link.short}" %></td>
+    <td><%= link_to link.long, "http://thom.is/#{link.short}" %></td>
+    <td><%= link.requests %></td>
+<%
+#    <td><%= link_to 'Show', link % ></td>
+%>
+<%
+#    <td><%= link_to 'Edit', edit_link_path(link) % ></td>
+%>
+<%
+#    <td><%= link_to 'Destroy', link, :confirm => 'Are you sure?', :method => :delete % ></td>
+%>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Link', new_link_path %>

@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Short Path:</b>
+  <%= link_to @link.short, "http://thom.is/#{@link.short}" %>
+</p>
+
+<p>
+  <b>Full URL:</b>
+  <%= link_to @link.long, "http://thom.is/#{@link.short}" %>
+</p>
+
+<p>
+  <b>Requests:</b>
+  <%= @link.requests %>
+</p>
+
+
+<%= link_to 'Edit', edit_link_path(@link) %> |
+<%= link_to 'Back', links_path %>
