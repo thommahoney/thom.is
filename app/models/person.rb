@@ -1,6 +1,8 @@
 require 'digest'
 class Person < ActiveRecord::Base
 
+  has_many :created_tasks, :class_name => "Task"
+
   attr_accessor :password
 
   validates :email, :uniqueness => true,
@@ -12,6 +14,15 @@ class Person < ActiveRecord::Base
                        :if => :password_required?
 
   before_save :encrypt_new_password
+
+  def self.authenticate(email, password)
+    person = find_by_email(email.downcase)
+    return person if person && person.authenticated?(password)
+  end
+
+  def authenticated?(password)
+    self.hashed_password == encrypt(password)
+  end
 
   def to_json(options={})
     options = {} unless options

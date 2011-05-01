@@ -1,4 +1,5 @@
 class TasksController < ApplicationController
+  before_filter :authenticate
 
   # GET /tasks
   # GET /tasks.json
