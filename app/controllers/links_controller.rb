@@ -1,4 +1,6 @@
 class LinksController < ApplicationController
+  layout "links_layout"
+
   # GET /links
   # GET /links.json
   def index

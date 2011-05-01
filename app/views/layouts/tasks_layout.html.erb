@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Thom.is Task Manager</title>
+  <%= include_stylesheets :tasks %>
+  <script type="text/javascript" src="http://thom.is:8080/comet.js"></script>
+  <%= include_javascripts :tasks %>
+  <%= csrf_meta_tag %>
+</head>
+<body>
+  <div id="content">
+<%= yield %>
+  </div>
+</body>
+</html>

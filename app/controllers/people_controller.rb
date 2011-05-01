@@ -1,6 +1,8 @@
 class PeopleController < ApplicationController
   before_filter :authenticate
 
+  layout "tasks_layout"
+
   # GET /people
   # GET /people.json
   def index
