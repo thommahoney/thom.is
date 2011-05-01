@@ -12,9 +12,15 @@ javascripts:
   links:
     - public/javascripts/jquery.js
     - public/javascripts/rails.js
+    - public/javascripts/Proxy.js
+    - public/javascripts/links_app.js
   tasks:
     - public/javascripts/jquery.js
     - public/javascripts/rails.js
+    - public/javascripts/Proxy.js
+    - public/javascripts/Task.js
+    - public/javascripts/RealTimeSync.js
+    - public/javascripts/tasks_app.js
 
 stylesheets:
   links:
