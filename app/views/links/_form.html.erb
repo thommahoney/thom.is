@@ -15,12 +15,8 @@
     <%= f.label 'Full URL' %><br />
     <%= f.text_field :long %>
   </div>
-  <a href="javascript://" id="show_short_anchor">Show Short Link</a>
   <div class="field" id="short">
     <%= f.label 'http://thom.is/' %>
     <%= f.text_field :short, :value => Link.random_string(3) %>
-  </div>
-  <div class="actions">
-    <%= f.submit "Shorten", :onclick => '' %>
   </div>
 <% end %>
