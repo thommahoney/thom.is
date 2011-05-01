@@ -10,12 +10,28 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110104065226) do
+ActiveRecord::Schema.define(:version => 20110430002435) do
 
   create_table "links", :force => true do |t|
     t.string   "short"
     t.string   "long"
     t.integer  "requests",   :default => 0
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "people", :force => true do |t|
+    t.string   "name"
+    t.string   "email"
+    t.string   "hashed_password"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "tasks", :force => true do |t|
+    t.text     "body"
+    t.boolean  "completed"
+    t.integer  "creator_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

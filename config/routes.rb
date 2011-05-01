@@ -1,5 +1,7 @@
 ThomIs::Application.routes.draw do
   resources :links
+  resources :tasks
+  resources :people
 
 
 
