@@ -1,0 +1,10 @@
+    <nav>
+      <%= link_to '', root_path, :id => 'home' %>
+<%
+      unless path.nil?
+%>
+      <%= link_to path_name, path %>
+<%
+      end
+%>
+    </nav>

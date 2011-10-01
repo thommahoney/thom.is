@@ -12,11 +12,9 @@
   <% end %>
 
   <div class="field" id="long">
-    <%= f.label 'Full URL' %><br />
-    <%= f.text_field :long %>
+    <%= f.text_field :long, :value => 'Long URL' %>
   </div>
   <div class="field" id="short">
-    <%= f.label 'http://thom.is/' %>
-    <%= f.text_field :short, :value => Link.random_string(3) %>
+    <%= f.text_field :short, :value => 'http://thom.is/' + Link.random_string(3) %>
   </div>
 <% end %>

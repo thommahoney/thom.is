@@ -1,5 +1,7 @@
-<div class="header">Create a short URL</div>
+<h2>Create a short URL</h2>
+
+<%= link_to 'Stats', links_path, :id => "stats" %>
 
 <%= render 'form' %>
 
-<%= link_to 'Stats', links_path %>
+<%= render :partial => 'home/captcha' %>

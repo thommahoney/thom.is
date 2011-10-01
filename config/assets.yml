@@ -9,13 +9,14 @@ gzip_assets:            off          # (on, off)
 #  compilation_level: ADVANCED_OPTIMIZATIONS
 
 javascripts:
+  default:
+    - public/javascripts/tree.js
+    - public/javascripts/Captcha.js
   links:
-    - public/javascripts/jquery.js
     - public/javascripts/rails.js
     - public/javascripts/Proxy.js
     - public/javascripts/links_app.js
   tasks:
-    - public/javascripts/jquery.js
     - public/javascripts/rails.js
     - public/javascripts/Proxy.js
     - public/javascripts/Task.js
@@ -23,6 +24,12 @@ javascripts:
     - public/javascripts/tasks_app.js
 
 stylesheets:
+  default:
+    - public/stylesheets/reset.css
+    - public/stylesheets/thom.is.css
+    - public/stylesheets/captcha.css
+  home:
+    - public/stylesheets/home.css
   links:
     - public/stylesheets/links.css
   tasks:

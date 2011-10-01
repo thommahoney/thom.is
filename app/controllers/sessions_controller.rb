@@ -1,4 +1,6 @@
 class SessionsController < ApplicationController
+
+  layout "tasks_layout"
     
   def create
     if user = Person.authenticate(params[:email], params[:password])

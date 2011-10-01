@@ -1,0 +1,51 @@
+body div#main div#content {
+  width: 510px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+body div#main div#twitter_feed {
+  display: inline-block;
+/*
+  position: absolute;
+  top: 30px;
+  right: 20px;
+*/
+  width: 250px;
+  height: 391px;
+  margin: 10px 0 0 20px;
+}
+
+body div#main div#twitter_feed a,
+body div#main div#twitter_feed a:link,
+body div#main div#twitter_feed a:visited,
+body div#main div#twitter_feed a:hover,
+body div#main div#twitter_feed a:focus,
+body div#main div#twitter_feed a:active {
+  display: inline;
+  border-bottom: none;
+}
+
+body div#main div#twitter_feed div.twtr-doc {
+  -webkit-box-shadow: inset 0px 0px 1px 1px rgba(0,0,0, 0.25);
+  -moz-box-shadow: inset 0px 0px 1px 1px rgba(0,0,0, 0.25);
+  box-shadow: inset 0px 0px 1px 1px rgba(0,0,0, 0.25);
+}
+
+body div#main div#twitter_feed div.twtr-timeline {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  -webkit-box-shadow: inset 0px 0px 2px 2px rgba(0,0,0, 0.25);
+  -moz-box-shadow: inset 0px 0px 2px 2px rgba(0,0,0, 0.25);
+  box-shadow: inset 0px 0px 2px 2px rgba(0,0,0, 0.25);
+}
+
+body div#main div#twitter_feed a.twtr-join-conv {
+  display: none;
+}
+
+body div#main div#twitter_feed div.twtr-ft div {
+  position: relative;
+  left: 85px;
+}

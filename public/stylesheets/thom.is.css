@@ -1,0 +1,206 @@
+@font-face {
+  font-family: Champagne;
+  src: url(/fonts/Champagne_Limousines.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: Champagne;
+  src: url(/fonts/Champagne_Limousines-Thick.ttf) format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Champagne;
+  src: url(/fonts/Champagne_Limousines-Italic.ttf) format("truetype");
+  font-style: italic;
+}
+
+html {
+  background-color: #3d3d3d;
+}
+
+body {
+  background-color: #3d3d3d;
+  font-family: 'Gill Sans', Helvetica, Arial, sans-serif;
+  color: #333333;
+}
+
+*::selection,
+*::-moz-selection {
+  background-color: #00ff7f;
+}
+
+body header,
+body div#main,
+body footer {
+  width: 800px;
+  margin: 10px auto;
+}
+
+/************************************************
+ * LINKS
+ ************************************************/
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:focus,
+a:active {
+  display: inline-block;
+  cursor: pointer;
+  color: #333333;
+  border-bottom: 1px dashed #333333;
+  text-decoration: none;
+  line-height: 14px;
+}
+
+a:hover {
+  border-bottom: 1px dashed #5f5f5f;
+  color: #5f5f5f;
+}
+
+/************************************************
+ * TITLES
+ ************************************************/
+
+h1, h2, h3, h4, h5 {
+  font-family: Champagne;
+  color: #f2ede6;
+}
+
+h1 {
+  font-size: 36px;
+  margin: 12px;
+}
+
+h2 {
+  font-size: 24px;
+  margin: 10px;
+}
+
+h3 {
+  font-size: 18px;
+  margin: 5px;
+}
+
+h4 {
+  font-size: 12px;
+  margin: 2px;
+}
+
+/************************************************
+ * HEADER
+ ************************************************/
+
+body header h1 {
+  display: inline-block;
+}
+
+body header h1 em {
+  font-weight: bold;
+}
+
+/************************************************
+ * TREE
+ ************************************************/
+
+body header a,
+body header a:link,
+body header a:visited,
+body header a:hover,
+body header a:focus,
+body header a:active {
+  border: none;
+}
+
+body header a canvas#tree_canvas {
+  display: inline-block;
+  position: relative;
+  top: 36px;
+}
+
+/************************************************
+ * NAVIGATION
+ ************************************************/
+
+body div#main nav {
+  height: 24px;
+  position: relative;
+  background-color: #e9eaee;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0, 0, 0, .48)), to(rgba(0, 0, 0, .32)));
+  background-image: -moz-linear-gradient(0% 100% 90deg, rgba(0, 0, 0, .32), rgba(0, 0, 0, .48));
+  -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .78), inset 0 0 5px rgba(0, 0, 0, .34);
+     -moz-box-shadow: 0 0 1px rgba(255, 255, 255, .78), inset 0 0 5px rgba(0, 0, 0, .34);
+          box-shadow: 0 0 1px rgba(255, 255, 255, .78), inset 0 0 5px rgba(0, 0, 0, .34);
+  -webkit-border-top-left-radius: 8px;
+  -webkit-border-top-right-radius: 8px;
+  -moz-border-radius-topleft: 8px;
+  -moz-border-radius-topright: 8px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+body div#main nav a,
+body div#main nav a:link,
+body div#main nav a:visited,
+body div#main nav a:hover,
+body div#main nav a:focus,
+body div#main nav a:active {
+  border: none;
+  line-height: 10px;
+  color: #f2ede6;
+}
+
+/************************************************
+ * CONTENT
+ ************************************************/
+
+body div#main {
+  background-color: #e9eaee;
+  -webkit-box-shadow: 1px 2px 6px rgba(0,0,0, 0.5);
+  -moz-box-shadow: 1px 2px 6px rgba(0,0,0, 0.5);
+  box-shadow: 1px 2px 6px rgba(0,0,0, 0.5);
+  border: 2px solid #ffffff;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  padding-bottom: 12px;
+/*  position: relative; <-- don't do this! */
+}
+
+body div#main div#content {
+
+}
+
+body div#main div#content h1,
+body div#main div#content h2,
+body div#main div#content h3,
+body div#main div#content h4,
+body div#main div#content h5 {
+  color: #3d3d3d;
+  position: relative;
+  left: 12px;
+  margin-top: 30px;
+}
+
+body div#main div#content ul {
+  position: relative;
+  left: 36px;
+}
+
+body div#main div#content p {
+  padding-left: 36px;
+}
+
+/************************************************
+ * FOOTER
+ ************************************************/
+
+body footer {
+  margin-bottom: 50px;
+}
+
+body footer h4 {
+  text-align: right;
+}
