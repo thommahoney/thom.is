@@ -16,11 +16,10 @@
 }
 
 html {
-  background-color: #3d3d3d;
+  background-image: url(/images/background.jpg);
 }
 
 body {
-  background-color: #3d3d3d;
   font-family: 'Gill Sans', Helvetica, Arial, sans-serif;
   color: #333333;
 }
@@ -66,7 +65,9 @@ a:hover {
 
 h1, h2, h3, h4, h5 {
   font-family: Champagne;
-  color: #f2ede6;
+  color: rgb(97, 98, 100);
+  text-shadow: 0px 1px 0px #ffffff;
+  filter: dropshadow(color=#ffffff, offx=0, offy=1);
 }
 
 h1 {
@@ -127,7 +128,7 @@ body header a canvas#tree_canvas {
 body div#main nav {
   height: 24px;
   position: relative;
-  background-color: #e9eaee;
+  background-color: #616264;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0, 0, 0, .48)), to(rgba(0, 0, 0, .32)));
   background-image: -moz-linear-gradient(0% 100% 90deg, rgba(0, 0, 0, .32), rgba(0, 0, 0, .48));
   -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .78), inset 0 0 5px rgba(0, 0, 0, .34);
@@ -157,20 +158,30 @@ body div#main nav a:active {
  ************************************************/
 
 body div#main {
-  background-color: #e9eaee;
-  -webkit-box-shadow: 1px 2px 6px rgba(0,0,0, 0.5);
-  -moz-box-shadow: 1px 2px 6px rgba(0,0,0, 0.5);
-  box-shadow: 1px 2px 6px rgba(0,0,0, 0.5);
-  border: 2px solid #ffffff;
+  background-color: rgb(97, 98, 100);
+/*   background-color: rgba(0, 0, 0, 0.5); */
+  border-bottom: 1px solid #fff;
+  
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
-  padding-bottom: 12px;
-/*  position: relative; <-- don't do this! */
+  
+  padding-bottom: 4px;
+  
+  position: relative;
 }
 
 body div#main div#content {
-
+  background-color: #eaedec;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  
+  margin: 8px 8px 0px;
+  
+  -webkit-box-shadow: 0px 1px 7px 1px rgba(0, 0, 0, 0.4);
+     -moz-box-shadow: 0px 1px 7px 1px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 1px 7px 1px rgba(0, 0, 0, 0.4);
 }
 
 body div#main div#content h1,
@@ -178,7 +189,7 @@ body div#main div#content h2,
 body div#main div#content h3,
 body div#main div#content h4,
 body div#main div#content h5 {
-  color: #3d3d3d;
+  color: #616264;
   position: relative;
   left: 12px;
   margin-top: 30px;
