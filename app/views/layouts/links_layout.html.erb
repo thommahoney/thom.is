@@ -17,6 +17,7 @@
 <%= render :partial => 'home/header', :locals => { :thom_is => "links" } %>
 
   <div id="main">
+	<div id="content">
 <!--
 
 <%= render :partial => 'home/nav', :locals => { :path => nil, :name => nil } %>
@@ -24,6 +25,7 @@
 
 <%= yield %>
 
+	</div>
   </div>
 
 <%= render :partial => 'home/footer' %>

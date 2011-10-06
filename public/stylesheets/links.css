@@ -1,23 +1,24 @@
+
 body div#main {
   text-align: center;
 }
 
-body div#main h2 {
+body div#main div#content h2 {
   position: relative;
   top: 20px;
 }
 
-body div#main a#stats {
+body div#main div#content a#stats {
   position: relative;
   top: -45px;
   left: 360px;
 }
 
-body div#main div.field {
+body div#main div#content div.field {
 
 }
 
-body div#main div.field input {
+body div#main div#content div.field input {
   width: 700px;
   height: 32px;
   margin: 10px;
@@ -29,6 +30,6 @@ body div#main div.field input {
   border-radius: 5px;
 }
 
-body div#main div.field input.dark {
+body div#main div#content div.field input.dark {
   color: #3d3d3d;
 }

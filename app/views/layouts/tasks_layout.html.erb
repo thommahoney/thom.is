@@ -17,6 +17,7 @@
 <%= render :partial => 'home/header', :locals => { :thom_is => "tasks" } %>
 
   <div id="main">
+	<div id="content">
 <!--
 
 <%= render :partial => 'home/nav', :locals => { :path => nil, :name => nil } %>
@@ -24,11 +25,12 @@
 
 <%= yield %>
 
+	</div>
   </div>
 
 <%= render :partial => 'home/footer' %>
 
-  <script type="text/javascript" src="http://thom.is:8080/comet.js"></script>
+<!--  <script type="text/javascript" src="http://thom.is:8080/comet.js"></script> -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript"></script>
   <%= include_javascripts :default, :tasks %>
 

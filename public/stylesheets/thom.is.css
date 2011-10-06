@@ -122,6 +122,31 @@ body header a canvas#tree_canvas {
 }
 
 /************************************************
+ * MAIN
+ ************************************************/
+
+body div#main {
+  background-color: rgb(97, 98, 100);
+/*   background-color: rgba(0, 0, 0, 0.5); */
+
+/*  border-bottom: 1px solid #fff;*/
+  -webkit-box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 1),
+                      0px 1px 0px 0px rgba(255, 255, 255, 1);
+  -moz-box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 1),
+                   0px 1px 0px 0px rgba(255, 255, 255, 1);
+  box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 1),
+              0px 1px 0px 0px rgba(255, 255, 255, 1);
+  
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  
+  padding-bottom: 4px;
+  
+  position: relative;
+}
+
+/************************************************
  * NAVIGATION
  ************************************************/
 
@@ -157,27 +182,18 @@ body div#main nav a:active {
  * CONTENT
  ************************************************/
 
-body div#main {
-  background-color: rgb(97, 98, 100);
-/*   background-color: rgba(0, 0, 0, 0.5); */
-  border-bottom: 1px solid #fff;
-  
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-  
-  padding-bottom: 4px;
-  
-  position: relative;
-}
-
 body div#main div#content {
+
+  width: 784px;
+  height: 390px;
+  margin: 8px 8px 4px;
+  display: inline-block;
+  vertical-align: top;
   background-color: #eaedec;
+
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  
-  margin: 8px 8px 0px;
   
   -webkit-box-shadow: 0px 1px 7px 1px rgba(0, 0, 0, 0.4);
      -moz-box-shadow: 0px 1px 7px 1px rgba(0, 0, 0, 0.4);
@@ -190,9 +206,6 @@ body div#main div#content h3,
 body div#main div#content h4,
 body div#main div#content h5 {
   color: #616264;
-  position: relative;
-  left: 12px;
-  margin-top: 30px;
 }
 
 body div#main div#content ul {

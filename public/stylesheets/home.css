@@ -6,6 +6,16 @@ body div#main div#content {
   vertical-align: top;
 }
 
+body div#main div#content h1,
+body div#main div#content h2,
+body div#main div#content h3,
+body div#main div#content h4,
+body div#main div#content h5 {
+  position: relative;
+  left: 12px;
+  margin-top: 30px;
+}
+
 body div#main div#twitter_feed {
   display: inline-block;
 /*
