@@ -1,0 +1,3 @@
+[submodule "public/mines"]
+	path = public/mines
+	url = git@github.com:thommahoney/Minesweeper.git
