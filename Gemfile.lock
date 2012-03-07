@@ -35,12 +35,10 @@ GEM
     arel (2.0.10)
     builder (2.1.2)
     closure-compiler (1.1.4)
-    daemon_controller (0.2.6)
     daemons (1.1.4)
     erubis (2.6.6)
       abstract (>= 1.0.0)
     eventmachine (0.12.10)
-    fastthread (1.0.7)
     i18n (0.5.0)
     jammit (0.6.0)
       closure-compiler (>= 0.1.0)
@@ -53,11 +51,6 @@ GEM
     mime-types (1.16)
     mysql2 (0.2.13)
     open4 (1.1.0)
-    passenger (3.0.9)
-      daemon_controller (>= 0.2.5)
-      fastthread (>= 1.0.1)
-      rack
-      rake (>= 0.8.1)
     polyglot (0.3.2)
     rack (1.2.4)
     rack-mount (0.6.14)
@@ -101,7 +94,6 @@ PLATFORMS
 DEPENDENCIES
   jammit (= 0.6.0)
   mysql2 (~> 0.2.7)
-  passenger
   rails (~> 3.0.9)
   sqlite3-ruby
   thin (= 1.2.8)

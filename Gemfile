@@ -8,7 +8,7 @@ gem 'jammit', '0.6.0'
 
 gem 'thin', '1.2.8'
 
-gem 'mysql2', '~> 0.2.7'
-
-gem 'passenger'
+group :production do
+  gem 'mysql2', '~> 0.2.7'
+end
 
