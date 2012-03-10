@@ -47,3 +47,7 @@ ThomIs::Application.configure do
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
 end
+
+Airbrake.configure do |config|
+  config.api_key = EY::Config.get(:airbrake, 'AIRBRAKE_API_KEY' )
+end

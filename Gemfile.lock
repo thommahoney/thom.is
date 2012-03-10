@@ -32,6 +32,9 @@ GEM
       activemodel (= 3.0.10)
       activesupport (= 3.0.10)
     activesupport (3.0.10)
+    airbrake (3.0.9)
+      activesupport
+      builder
     arel (2.0.10)
     builder (2.1.2)
     closure-compiler (1.1.4)
@@ -39,6 +42,7 @@ GEM
     erubis (2.6.6)
       abstract (>= 1.0.0)
     eventmachine (0.12.10)
+    ey_config (0.0.2)
     i18n (0.5.0)
     jammit (0.6.0)
       closure-compiler (>= 0.1.0)
@@ -92,6 +96,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  airbrake
+  ey_config
   jammit (= 0.6.0)
   mysql2 (~> 0.2.7)
   rails (~> 3.0.9)
