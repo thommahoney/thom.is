@@ -11,6 +11,7 @@ gem 'thin', '1.2.8'
 group :production do
   gem 'mysql2', '~> 0.2.7'
   gem 'airbrake'
+  gem 'newrelic_rpm'
   gem 'ey_config'
 end
 

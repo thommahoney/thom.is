@@ -54,6 +54,7 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.16)
     mysql2 (0.2.13)
+    newrelic_rpm (3.3.4.1)
     open4 (1.1.0)
     polyglot (0.3.2)
     rack (1.2.4)
@@ -100,6 +101,7 @@ DEPENDENCIES
   ey_config
   jammit (= 0.6.0)
   mysql2 (~> 0.2.7)
+  newrelic_rpm
   rails (~> 3.0.9)
   sqlite3-ruby
   thin (= 1.2.8)
