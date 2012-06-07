@@ -10,6 +10,6 @@ ThomIs::Application.routes.draw do
   match '/auth' => 'sessions#credentials'
 
   match '*short' => "links#redirect"
-  
+
   root :to => 'home#index'
 end

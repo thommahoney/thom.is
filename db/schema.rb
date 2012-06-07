@@ -17,24 +17,24 @@ ActiveRecord::Schema.define(:version => 20110430002435) do
     t.string   "short"
     t.string   "long"
     t.integer  "requests",   :default => 0
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",                :null => false
+    t.datetime "updated_at",                :null => false
   end
 
   create_table "people", :force => true do |t|
     t.string   "name"
     t.string   "email"
     t.string   "hashed_password"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
   end
 
   create_table "tasks", :force => true do |t|
     t.text     "body"
     t.boolean  "completed"
     t.integer  "creator_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
 end
